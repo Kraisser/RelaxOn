@@ -1,0 +1,39 @@
+body {
+	font-size: 20px;
+}
+.insideContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.heading {
+	margin: 0 0 20px;
+	text-align: center;
+}
+.contentLogoContainer {
+	margin-top: 110px;
+	height: 300px;
+	background-color: rgb(247, 244, 150);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contentLogo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contentLogo h1 {
+	border-bottom: rgba(41, 76, 96, 1) 3px solid;
+	width: 4em;
+}
+.contentLogo p {
+	text-align: center;
+}
+.disabled {
+	background-color: grey;
+	cursor: not-allowed;
+}
+.helpText {
+	font-weight: normal;
+}

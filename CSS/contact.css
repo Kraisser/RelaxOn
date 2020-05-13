@@ -1,0 +1,30 @@
+.contactInfo {
+	height: 550px;
+	display: flex;
+}
+.info	{
+	flex-grow: 2;
+}
+.callbackContainer {
+	flex-grow: 2;
+}
+.callbackContainer form div {
+	display: flex;
+	flex-direction: column;
+}
+.inp {
+	margin: 5px 0 10px;
+	padding-left: 5px;
+	border-radius: 2px;
+}
+.lbl {
+	font-weight: 600;
+}
+.formBut {
+	margin-top: 10px;
+	width: 150px;
+}
+.inpArea {
+	height: 100px;
+	resize: none;
+}

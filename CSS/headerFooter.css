@@ -1,0 +1,88 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+.headerFooterHeading {
+	margin: 0;
+}
+.menuActive {
+	background-color: rgba(41, 76, 96, 0.25);
+}
+#stocks {
+	height: 60px;
+	background-color: rgb(247, 244, 238);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#stocks h2 {
+	margin: 0;
+}
+.mainMenuContainer {	
+	background-color: rgb(247, 244, 220);
+}
+.mainMenu {
+	max-width: 1200px;	
+	margin: 0 auto;
+	height: 50px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.mainNav {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+	margin: 0;
+	height: 100%;
+}
+.mainNav li a {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	font-weight: 600;
+	padding: 0 10px;
+}
+.mainNav li {
+	margin: 0 10px;
+	border-radius: 2px;
+}
+.mainLogoContainer {
+	display: flex;
+	justify-content: center;
+}
+.mainLogoContainer a {
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+}
+.logoImg {
+	width: 124px;
+	margin-left: 20px;
+}
+.brand {
+	margin: 0 20px;
+}
+#contentLogo {
+	height: 480px;
+}
+footer {
+	height: 50px;
+	background-color: rgb(247, 244, 238);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer div {
+	max-width: 1200px;
+}
