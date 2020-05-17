@@ -100,6 +100,124 @@ nav {
 .contentLogo p {
 	text-align: center;
 }
+
+/*Menu Hamburger*/
+.hamburgerNav {
+	position: absolute;
+	right: 0;
+	top: 130px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+#hamburgerIconContainer {
+	width: 70px;
+  height: 70px;
+	position: relative;
+	top: 0;
+	right: 10px;
+	cursor: pointer;
+	background: rgba(255, 255, 255, .4);
+	border: solid 1px black;
+	border-radius: 5px;
+}
+#hamburgerIconContainer span {
+	display: block;
+	background-color: #566973;
+	border-radius: 2px;
+	width: 55px;
+  height: 5px;
+  position:relative;
+  transition: 0.25s ease-in-out;
+  top: 10px;
+  left: 10%;
+  margin: 10px 0;
+}
+#hamburgerIcon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
+}
+#hamburgerIcon span:nth-child(1) {
+	transition-delay: .35s;
+}
+#hamburgerIcon span:nth-child(2) {
+	transition-delay: .30s;
+}
+#hamburgerIcon span:nth-child(3) {
+	transition-delay: .25s;
+}
+#hamburgerCross {
+	position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+#hamburgerCross span:nth-child(1) {
+	height: 0%;
+  width: 4px;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transition-delay: 0s;
+}
+#hamburgerCross span:nth-child(2) {
+	width: 0%;
+  height: 4px;
+  position: absolute;
+  left: 10%;
+  top: 25px;
+  transition-delay: .1s;
+}
+.hamburgerNavUl {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 30px;
+}
+.hamburgerNavUl li {
+	height: 40px;
+	margin: 15px 0;
+}
+.hamburgerNavUl li a {
+	padding: 0 8px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	height: 40px;
+}
+
+#hamburgerIconContainer.open #hamburgerIcon span {
+	width: 0%;
+}
+#hamburgerIconContainer.open #hamburgerIcon span:nth-child(1) {
+	transition-delay: 0s;
+}
+#hamburgerIconContainer.open #hamburgerIcon span:nth-child(2) {
+	transition-delay: .06s;
+}
+#hamburgerIconContainer.open #hamburgerIcon span:nth-child(3) {
+	transition-delay: .125s;
+}
+
+#hamburgerIconContainer.open #hamburgerCross span:nth-child(1) {
+	height: 85%;
+  transition-delay: .4s;
+}
+#hamburgerIconContainer.open #hamburgerCross span:nth-child(2) {
+	width: 85%;
+  transition-delay: .3s;
+}
+.hideMenu {
+	height: 0;
+	display: none;
+}
+/*End Hamburger*/
+
+
+
+
 footer {
 	height: 50px;
 	background-color: rgb(247, 244, 238);
@@ -120,6 +238,21 @@ footer div {
 	}
 	.contentLogoContainer {
 		margin-top: 160px;
+	}
+	.mainLogoContainer {
+		padding-top: 5px;
+	}
+}
+@media only all and (max-width: 700px) {
+	.mainNav {
+		display: none;
+	}
+	.mainMenu {
+		flex-direction: row;
+		height: 70px;
+	}
+	.contentLogoContainer {
+		margin-top: 130px;
 	}
 	.mainLogoContainer {
 		padding-top: 5px;
