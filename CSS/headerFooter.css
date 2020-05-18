@@ -63,6 +63,7 @@ nav {
 .mainLogoContainer {
 	display: flex;
 	justify-content: center;
+	flex-grow: 1;
 }
 .mainLogoContainer a {
 	text-decoration: none;
