@@ -36,7 +36,7 @@
 	display: flex;
 	overflow: hidden;
 }
-.flexRow img {
+.flexRow img:nth-child(1) {
 	margin-right: 10px;
 }
 .clothesModuleContainer {
@@ -51,4 +51,26 @@
 }
 .clothesModule div img {
 	margin-left: 10px;
+}
+
+
+@media only all and (max-width: 1250px) {
+	.flexRow img:nth-child(1) {
+		width: 40%;
+	}
+	.flexRow img:nth-child(2) {
+		width: 60%;
+	}
+}
+@media only all and (max-width: 700px) {
+	.flexRow {
+		flex-direction: column;
+	}
+	.flexRow img:nth-child(1) {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.flexRow img:nth-child(2) {
+		width: 100%;
+	}
 }

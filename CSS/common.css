@@ -18,3 +18,9 @@ body {
 .helpText {
 	font-weight: normal;
 }
+
+@media only all and (max-width: 1250px) {
+	.insideContainer {
+		padding: 0 10px;
+	}
+}
