@@ -1,6 +1,14 @@
+.contactInfoContainer {
+	/*height: 100%;*/
+	flex-grow: 1;
+}
 .contactInfo {
-	height: 550px;
+	/*height: 550px;*/
 	display: flex;
+}
+.contactFullHeight {
+	display: flex;
+	flex-direction: column;
 }
 .info	{
 	flex-grow: 2;

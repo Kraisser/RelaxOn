@@ -1,15 +1,12 @@
 #sliderContainer {
 	background-color: rgb(247, 244, 180);
-	padding: 20px 0;
 }
 #sliderDivan {
-	width: 100%;
-	height: 600px;
+	height: 40vh;
 	background-color: black;
 }
 #workPositionContainer {
 	background-color: rgb(247, 200, 180);
-	padding: 20px 0;
 }
 #workPosition {
 	background-color: rgb(200, 200, 180);
@@ -22,7 +19,8 @@
 	text-align: center;
 }
 .workPositionWrapper img {
-	margin: 5px;
+	margin: 5px auto;
+	width: 100%;
 }
 .workPositionWrapper h3 {
 	text-align: center;
@@ -40,7 +38,6 @@
 	margin-right: 10px;
 }
 .clothesModuleContainer {
-	padding: 20px 0;
 	background-color: rgb(160, 250, 250);
 }
 .clothesModule {
@@ -61,6 +58,16 @@
 	.flexRow img:nth-child(2) {
 		width: 60%;
 	}
+	.clothesModule {
+		flex-direction: column;
+	}
+	.clothesModule div {
+		margin: 0 auto;
+	}
+	.clothesModule div img {
+		width: 100%;
+		margin: 0;
+	}
 }
 @media only all and (max-width: 700px) {
 	.flexRow {
@@ -68,9 +75,15 @@
 	}
 	.flexRow img:nth-child(1) {
 		width: 100%;
-		margin-bottom: 20px;
-	}
+		margin-bottom: 1vw;
+	}	
 	.flexRow img:nth-child(2) {
 		width: 100%;
+	}
+	#workPosition {
+		flex-direction: column;
+	}
+	.workPositionWrapper {
+		max-width: 100%;
 	}
 }

@@ -7,9 +7,8 @@
 	<title>Диван RelaxON</title>
 	<link rel="stylesheet" type="text/css" href="CSS/normalise.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="CSS/headerFooter.css">
+	<link rel="stylesheet" type="text/css" href="CSS/headFoot.css">
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
-	<link rel="stylesheet" type="text/css" href="CSS/models.css">
 </head>
 <body>
 	<header>
@@ -27,13 +26,34 @@
 
 				<nav>
 					<ul class="mainNav">
-						<li><a href="index.html">Главная</a></li>
+						<li><a href="index.html" class="menuActive">Главная</a></li>
 						<li><a href="models.html">Модели</a></li>
-						<li><a href="materials.html" class="menuActive">Материалы</a></li>
+						<li><a href="materials.html">Материалы</a></li>
 						<li><a href="index.html" class="disabled">Заказать</a></li>
 						<li><a href="contact.html">Контакты</a></li>
 					</ul>
+					<div id="hamburgerIconContainer">
+					  <div id="hamburgerIcon">
+					    <span></span>
+					    <span></span>
+					    <span></span>
+					  </div>
+					  <div id="hamburgerCross">
+					    <span></span>
+					    <span></span>
+					  </div>
+					</div>
+										
 				</nav>
+				<div class="hamburgerNav hideMenu" id="hamburgerNavMenu">
+					<ul class="hamburgerNavUl hideMenu" id="hamburgerNavUl">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="models.html">Модели</a></li>
+						<li class="menuActive"><a href="materials.html">Материалы</a></li>
+						<li><a href="index.html" class="disabled">Заказать</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>		
 	</header>
@@ -56,5 +76,6 @@
 			</h2>
 		</div>
 	</footer>
+<script type="text/javascript" src="JS/main.js"></script>
 </body>
 </html>
