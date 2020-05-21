@@ -5,12 +5,11 @@ header {
 	right: 0;
 	z-index: 100;
 }
-.headerFooterHeading {
-	margin: 0;
-}
 .menuActive {
 	background-color: rgba(41, 76, 96, 0.25);
 }
+
+/*Акции*/
 #stocks {
 	height: 60px;
 	background-color: rgb(247, 244, 238);
@@ -18,9 +17,57 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-#stocks h2 {
+.stocksText {
 	margin: 0;
 }
+
+/*Дублирующий Логотип Телефон*/
+.logoPhone {
+	display: none;
+	height: 50px;
+	background-color: white;
+}
+.logoPhoneInContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 3;
+}
+.logoPhone div a {
+	display: flex;
+	align-items: center;
+}
+.logoPhone div a img {
+	margin-right: 5px;
+}
+
+
+/*Логотип Телефон*/
+.mainLogoContainer {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+.mainLogoContainer div {
+	flex-grow: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mainLogoContainer a {
+	font-size: 22px;
+	display: flex;
+	align-items: center;
+}
+.logoImg {
+	width: 124px;
+	margin-left: 20px;
+}
+.brand {
+	margin: 0 20px;
+}
+
+/*Основное меню*/
 .mainMenuContainer {	
 	background-color: rgb(247, 244, 220);
 }
@@ -50,8 +97,6 @@ nav {
 	align-items: center;
 	justify-content: center;
 	height: 40px;
-	text-decoration: none;
-	color: black;
 	font-size: 22px;
 	font-weight: 500;
 	padding: 0 10px;
@@ -60,25 +105,8 @@ nav {
 	border-radius: 2px;
 	flex-basis: 150px;
 }
-.mainLogoContainer {
-	display: flex;
-	justify-content: center;
-	flex-grow: 1;
-}
-.mainLogoContainer a {
-	text-decoration: none;
-	color: black;
-	font-size: 22px;
-	display: flex;
-	align-items: center;
-}
-.logoImg {
-	width: 124px;
-	margin-left: 20px;
-}
-.brand {
-	margin: 0 20px;
-}
+
+/*Описание страницы*/
 .contentLogoContainer {
 	margin-top: 110px;
 	background-color: rgb(247, 244, 150);
@@ -109,7 +137,7 @@ nav {
 .hamburgerNav {
 	position: absolute;
 	right: 0;
-	top: 130px;
+	top: 180px;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
@@ -173,7 +201,6 @@ nav {
 }
 .hamburgerNavUl {
 	list-style: none;
-	text-decoration: none;
 	margin: 0;
 	padding: 0 30px;	
 	transition: 0.25s linear;
@@ -188,7 +215,6 @@ nav {
 	padding: 0 8px;
 	display: flex;
 	align-items: center;
-	text-decoration: none;
 	height: 40px;
 }
 
@@ -233,8 +259,9 @@ footer div {
 }
 
 
+
 /*Media*/
-@media only all and (max-width: 1100px) {
+@media only all and (max-width: 1200px) {
 	nav {
 		height: 50px;
 	}
@@ -253,9 +280,19 @@ footer div {
 		display: flex;
 		justify-content: center;
 	}
+	.logoPhone {
+		display: flex;
+	}
 	.mainLogoContainer {
 		flex-basis: 80%;
 		flex-grow: 5;
+	}
+	.mainLogoContainer div:nth-child(1) {
+		display: flex;
+		justify-content: flex-start;
+	}
+	div.phoneMainLogoContainer {
+		display: none;
 	}
 	.mainNav {
 		display: none;
@@ -264,15 +301,25 @@ footer div {
 		flex-direction: row;
 		height: 70px;
 	}
+	.brandMain {
+		display: none;
+	}
+	div.brandMainContainer {
+		display: none;
+	}
+	.logoImg {
+		margin-left: 20px;
+		width: 175px;
+	}
 	.contentLogoContainer {
-		margin-top: 130px;
+		margin-top: 180px;
 	}
 }
-@media only all and (max-width: 400px) {
-	.logoImg {
-		margin-left: 5px;
-	}
-	.brand {
+@media only all and (max-width: 430px) {
+	.brandInContainer {
 		display: none;
+	}
+	.logoImg {
+		margin-left: 10px;
 	}
 }

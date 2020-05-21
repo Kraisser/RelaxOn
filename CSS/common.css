@@ -2,6 +2,10 @@ body {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 }
+a {
+	text-decoration: none;
+	color: black;
+}
 .insideContainer {
 	max-width: 1200px;
 	margin: 0 auto;
