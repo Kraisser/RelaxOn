@@ -268,3 +268,11 @@ footer div {
 		margin-top: 130px;
 	}
 }
+@media only all and (max-width: 400px) {
+	.logoImg {
+		margin-left: 5px;
+	}
+	.brand {
+		display: none;
+	}
+}
