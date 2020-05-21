@@ -1,5 +1,4 @@
 .modelsText {
-	padding: 10px 0;
 	border-bottom: solid lightgrey 1px;
 	margin-bottom: 20px;
 }
@@ -8,18 +7,61 @@
 }
 .modelsVariantWrapper {
 	display: flex;
-	justify-content: space-between;
-	overflow: hidden;
 }
 .modelsVariant {
+	flex-basis: 33%;
+	flex-grow: 3;
+	display: flex;
+	flex-direction: column;
+}
+.modelsVariantPrice {
 	flex-grow: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0;
+}
+.modelsPrice {
+	display: none;
 }
 .modelsVariant img {
-	width: 310px;
+	width: 90%;
+	margin: 0 auto;
 }
 .modelsVariant li {
 	margin: 0.5em 0
+}
+.priceDescription {
+	margin: 0;
+}
+
+
+
+@media only all and (max-width: 1200px) {
+	
+}
+
+@media only all and (max-width: 700px) {
+	.modelsVariantWrapper {
+		flex-direction: column;
+	}
+	.modelsPriceContainer {
+		display: none;
+	}
+	.modelsText p {
+		margin: 10px 0;
+	}
+	.modelsPrice {
+		display: flex;
+		justify-content: center;
+		margin: 5px 0 15px;
+	}
+	.modelsVariant {
+		padding-top: 10px;
+		border-bottom: solid 1px lightgrey;
+	}
+	.modelsVariant ul {
+		margin: 0.5em 0 0;
+		padding-left: 30px;
+	}
 }

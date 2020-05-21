@@ -45,9 +45,10 @@
 }
 .clothesModule div {
 	flex-grow: 3;
+	flex-basis: 50%;
 }
 .clothesModule div img {
-	margin-left: 10px;
+	margin-right: 25px;
 }
 
 
@@ -58,17 +59,25 @@
 	.flexRow img:nth-child(2) {
 		width: 60%;
 	}
-	.clothesModule {
-		flex-direction: column;
-	}
-	.clothesModule div {
-		margin: 0 auto;
+	
+	.clothesModule div:nth-child(1) {
+		margin-right: 10px;
 	}
 	.clothesModule div img {
 		width: 100%;
 		margin: 0;
 	}
 }
+
+@media only all and (max-width: 900px) {
+	.clothesModule {
+		flex-direction: column;
+	}
+	.clothesModule div:nth-child(1) {
+		margin-right: 0;
+	}
+}
+
 @media only all and (max-width: 700px) {
 	.flexRow {
 		flex-direction: column;
@@ -86,4 +95,5 @@
 	.workPositionWrapper {
 		max-width: 100%;
 	}
+	
 }

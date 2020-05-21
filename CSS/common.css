@@ -5,9 +5,7 @@ body {
 .insideContainer {
 	max-width: 1200px;
 	margin: 0 auto;
-}
-.outsideContainer {
-	padding: 20px 10px;
+	padding: 1% 0;
 }
 .heading {
 	margin: 0 0 20px;
@@ -24,15 +22,15 @@ body {
 
 @media only all and (max-width: 1250px) {
 	.insideContainer {
-		padding: 0 10px;
+		padding: 1% 1%;
 	}
 }
 
 @media only all and (max-width: 700px) {
-	.outsideContainer {
-		padding: 10px 0;
+	.insideContainer {
+		padding: 10px;
 	}
 	.heading {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 	}
 }
