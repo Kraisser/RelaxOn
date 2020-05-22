@@ -109,11 +109,9 @@ nav {
 /*Описание страницы*/
 .contentLogoContainer {
 	margin-top: 110px;
-	background-color: rgb(247, 244, 150);
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	background-image: url("../RES/Img/Background/backgroundPageDescription.jpg");
+	background-position: center center;
+	background-size: cover;
 }
 .contentLogo {
 	display: flex;

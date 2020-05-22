@@ -1,0 +1,30 @@
+.complectationContainer {
+
+}
+.dspMaterials {
+	display: flex;
+	justify-content: center;
+}
+.dspPages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+}
+.dspImageContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 10px;
+}
+.dspImage {
+	max-width: 120px;
+}
+.dspImageContainer:hover {
+	transform: scale(1.1);
+	background-color: lightblue;
+	padding: 10px 5px;
+	margin: 0;
+	position: relative;
+	transition-duration: 0.3s;
+}
