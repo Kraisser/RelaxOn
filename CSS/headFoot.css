@@ -140,7 +140,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	transition: 0.25s linear;
-	height: 290px;
+	height: 260px;
 }
 #hamburgerIconContainer {
 	width: 50px;
@@ -202,12 +202,11 @@ nav {
 	margin: 0;
 	padding: 0 30px;	
 	transition: 0.25s linear;
-	height: 290px;	
 	overflow: hidden;
 }
 .hamburgerNavUl li {
 	height: 40px;
-	margin: 15px 0;
+	margin: 10px 0;
 }
 .hamburgerNavUl li a {
 	padding: 0 8px;
@@ -246,14 +245,21 @@ nav {
 
 
 footer {
-	height: 50px;
 	background-color: rgb(247, 244, 238);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-footer div {
-	max-width: 1200px;
+.footerContainer {
+	display: flex;
+}
+.footerInsideContainer {
+	flex-grow: 3;
+	margin: 0 10px;
+	display: flex;
+}
+.footerInsideContainer div {
+	margin: 0 10px;
 }
 
 
@@ -269,6 +275,20 @@ footer div {
 	}
 	.contentLogoContainer {
 		margin-top: 160px;
+	}
+}
+@media only all and (max-width: 900px) {
+	.footerContainer {
+		flex-direction: column;
+	}
+	.footerInsideContainer {
+		margin: 5px 0;
+	}
+	.footerInsideContainer div {
+		margin: 0;
+		flex-grow: 3;
+		display: flex;
+		justify-content: center;
 	}
 }
 @media only all and (max-width: 700px) {
@@ -319,5 +339,10 @@ footer div {
 	}
 	.logoImg {
 		margin-left: 10px;
+	}
+}
+@media only all and (max-width: 360px) {
+	.footerInsideContainer {
+		flex-direction: column-reverse;
 	}
 }
