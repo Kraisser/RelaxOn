@@ -8,6 +8,7 @@
 			interval = null,
 			curSlide = 0,
 			slidesCollection = null,
+			dotsCollection = null,
 			pause = false;
 
 		this.startInterval = function() {
@@ -20,9 +21,13 @@
 
 		this.addLinks = function() {
 			for (let i = 0; i < slidesCollection.length; i++) {
-				dotsContainer.insertAdjacentHTML(`beforeend`, `<div class="slideDot" data-slide-num="${i}"></div>`);
+				if (i === 0) {
+					dotsContainer.insertAdjacentHTML(`beforeend`, `<div class="slideDot activeSlideDot" data-slide-num="${i}"></div>`);
+				} else {
+					dotsContainer.insertAdjacentHTML(`beforeend`, `<div class="slideDot" data-slide-num="${i}"></div>`);
+				}				
 			}
-			
+			dotsCollection = document.querySelectorAll(`.slideDot`);
 		}
 
 		this.addEvents = function() {
@@ -39,12 +44,14 @@
 		}
 
 		this.moveSlide = function(direction, exactSlide) {
+			dotsCollection[curSlide].classList.remove(`activeSlideDot`);
 			slidesCollection[curSlide].classList.remove(`showSlide`);
 			if (exactSlide) {
 				curSlide = +(exactSlide);
 			} else {
 				curSlide = ((direction ? curSlide - 1 : curSlide + 1) + slidesCollection.length) % slidesCollection.length;
 			}
+			dotsCollection[curSlide].classList.add(`activeSlideDot`);
 			slidesCollection[curSlide].classList.add(`showSlide`);
 		}
 

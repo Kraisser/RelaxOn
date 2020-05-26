@@ -30,6 +30,7 @@
 	top: 40%;
 	z-index: 7;
 	background-color: lightgrey;
+	cursor: pointer;
 }
 #prevControl {
 	left: 15px;
@@ -58,4 +59,7 @@
 }
 .slideDot:hover {
 	background-color: lightgrey;
+}
+.activeSlideDot {
+	background-color: grey;
 }
