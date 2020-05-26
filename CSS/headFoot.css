@@ -33,12 +33,14 @@ header {
 	justify-content: center;
 	flex-grow: 3;
 }
-.logoPhone div a {
+.phoneNumber {
 	display: flex;
 	align-items: center;
+	font-size: 22px;
 }
-.logoPhone div a img {
+.phoneNumber img {
 	margin-right: 5px;
+	height: 35px;
 }
 
 
@@ -58,6 +60,9 @@ header {
 	font-size: 22px;
 	display: flex;
 	align-items: center;
+}
+.phoneMainLogoContainer img{
+	margin-right: 5px;
 }
 .logoImg {
 	width: 124px;
