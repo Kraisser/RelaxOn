@@ -61,6 +61,9 @@ header {
 	display: flex;
 	align-items: center;
 }
+.phoneMainLogoContainer {
+	margin-right: 10px;
+}
 .phoneMainLogoContainer img{
 	margin-right: 5px;
 }
@@ -130,6 +133,7 @@ nav {
 	width: 100%;
 	font-weight: 500;
 	margin: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 .contentLogo p {
 	text-align: center;

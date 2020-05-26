@@ -1,0 +1,61 @@
+#slidesUl {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	overflow: hidden;
+	height: 50vh;
+}
+.slideDivan {
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100%;
+	opacity: 0;
+	z-index: 5;
+	transition: opacity 2s;
+}
+.slideDivan img {
+	height: 100%;
+	width: 100%;
+}
+.showSlide {
+	opacity: 1;
+	z-index: 6;
+}
+.sliderControls {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 40%;
+	z-index: 7;
+	background-color: lightgrey;
+}
+#prevControl {
+	left: 15px;
+}
+#nextControl {
+	right: 15px;
+}
+#dotsContainer {
+	position: absolute;
+	display: flex;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+	bottom: 5%;
+	z-index: 7;
+}
+.slideDot {
+	text-decoration: none;
+	background-color: black;
+	margin: 0 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.slideDot:hover {
+	background-color: lightgrey;
+}

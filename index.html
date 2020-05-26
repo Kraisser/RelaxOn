@@ -7,9 +7,11 @@
 	<title>Диван RelaxON</title>
 	<link rel="stylesheet" type="text/css" href="CSS/normalise.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="CSS/headFoot.css">
 	<link rel="stylesheet" type="text/css" href="CSS/common.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/slider.css">
 </head>
 <body>
 	<header>
@@ -93,8 +95,17 @@
 
 		<section id="sliderContainer">
 			<h2 class="heading">Фазы трансформации дивана</h2>
-			<div id="sliderDivan" class="insideContainer">
-				
+			<div id="sliderDivanContainer" class="insideContainer">
+				<ul id="slidesUl">
+					<li class="slideDivan showSlide"><img src="RES/Img/Slides/sliderExample.jpg"></li>
+					<li class="slideDivan"><img src="RES/Img/Slides/sliderExample.jpg"></li>
+					<li class="slideDivan"><img src="RES/Img/Slides/sliderExample.jpg"></li>
+					<li class="slideDivan"><img src="RES/Img/Slides/sliderExample.jpg"></li>
+					<li class="slideDivan"><img src="RES/Img/Slides/sliderExample.jpg"></li>
+				</ul>
+				<button class="sliderControls" id="prevControl"><</button>
+				<button class="sliderControls" id="nextControl">></button>
+				<div id="dotsContainer"></div>
 			</div>
 		</section>
 
@@ -119,7 +130,7 @@
 					<img src="RES/Img/workPosition/divanCompact2.jpg" alt="Компакт 2+2">
 					<h3>Компакт 2+2</h3>
 					<p>Положение "<strong>Компакт +2</strong>" или "прилягу-до-утра"</p>
-					<p>Диван полностью раздвинут. Обе подушки га выдвижном модуле. Ширина сиденья максимальна - 206 см. А если положить подлокотник, то и все 216 см. В таком положении диван легко разместит четырех человек.</p>
+					<p>Диван полностью раздвинут. Обе подушки на выдвижном модуле. Ширина сиденья максимальна - 206 см. А если положить подлокотник, то и все 216 см. В таком положении диван легко разместит четырех человек.</p>
 					<p>При необходимости диван может полноценным спальным местом для взрослого человека. Постельной белье храниться здесь же в выдвижном модуле с откидной крышкой, которая безопасно фиксируется в открытом положении.</p>
 				</div>				
 			</div>
@@ -169,6 +180,7 @@
 			</div>
 		</div>
 	</footer>
+<script type="text/javascript" src="JS/mainSlider.js"></script>
 <script type="text/javascript" src="JS/main.js"></script>
 </body>
 </html>

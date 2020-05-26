@@ -1,9 +1,10 @@
 #sliderContainer {
+	padding-bottom: 20px;
 	background-color: rgb(247, 244, 180);
 }
-#sliderDivan {
-	height: 40vh;
+#sliderDivanContainer {
 	background-color: black;
+	position: relative;
 }
 #workPositionContainer {
 	background-color: rgb(247, 200, 180);
@@ -52,7 +53,14 @@
 }
 
 
+
+
+
 @media only all and (max-width: 1250px) {
+	#sliderDivanContainer {
+		margin: 0 5px;
+	}
+
 	.flexRow img:nth-child(1) {
 		width: 40%;
 	}
