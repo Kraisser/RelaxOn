@@ -8,8 +8,7 @@
 			interval = null,
 			curSlide = 0,
 			slidesCollection = null,
-			dotsCollection = null,
-			pause = false;
+			dotsCollection = null;
 
 		this.startInterval = function() {
 			interval = setInterval(this.moveSlide, intervalSec, false);
@@ -19,21 +18,23 @@
 			clearInterval(interval);
 		}
 
-		this.addLinks = function() {
+		this.addDots = function() {
 			for (let i = 0; i < slidesCollection.length; i++) {
 				if (i === 0) {
 					dotsContainer.insertAdjacentHTML(`beforeend`, `<div class="slideDot activeSlideDot" data-slide-num="${i}"></div>`);
 				} else {
 					dotsContainer.insertAdjacentHTML(`beforeend`, `<div class="slideDot" data-slide-num="${i}"></div>`);
-				}				
+				}
 			}
 			dotsCollection = document.querySelectorAll(`.slideDot`);
+			dotsContainer.style.left = `50%`;
+			dotsContainer.style.marginLeft = `-${dotsContainer.offsetWidth / 2}px`;
 		}
 
-		this.addEvents = function() {
+		this.addEvents = function() {			
+			document.getElementById(`sliderDivanContainer`).addEventListener(`click`, that.stopInterval);
 			controlNext.addEventListener(`click`, () => this.moveSlide(true));
 			controlPrev.addEventListener(`click`, () => this.moveSlide(false));
-			document.getElementById(`sliderDivanContainer`).addEventListener(`click`, that.stopInterval);
 			dotsContainer.addEventListener(`click`, (e) => this.goSlide(e));
 		}
 
@@ -44,15 +45,18 @@
 		}
 
 		this.moveSlide = function(direction, exactSlide) {
-			dotsCollection[curSlide].classList.remove(`activeSlideDot`);
-			slidesCollection[curSlide].classList.remove(`showSlide`);
+			that.toggleClassFromSlide();
 			if (exactSlide) {
 				curSlide = +(exactSlide);
 			} else {
 				curSlide = ((direction ? curSlide - 1 : curSlide + 1) + slidesCollection.length) % slidesCollection.length;
 			}
-			dotsCollection[curSlide].classList.add(`activeSlideDot`);
-			slidesCollection[curSlide].classList.add(`showSlide`);
+			that.toggleClassFromSlide();
+		}
+
+		this.toggleClassFromSlide = function() {
+			dotsCollection[curSlide].classList.toggle(`activeSlideDot`);
+			slidesCollection[curSlide].classList.toggle(`showSlide`);
 		}
 
 		this.init = function(interval) {
@@ -61,7 +65,7 @@
 			controlNext = document.getElementById(`prevControl`);
 			controlPrev = document.getElementById(`nextControl`);
 			dotsContainer = document.getElementById(`dotsContainer`);
-			this.addLinks();
+			this.addDots();
 			this.addEvents();
 			this.startInterval();
 		}

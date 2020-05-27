@@ -4,4 +4,4 @@ document.getElementById(`hamburgerIconContainer`).addEventListener(`click`, func
 	document.getElementById(`hamburgerNavUl`).classList.toggle(`hideMenu`);
 });
 
-sliderModule.sliderLogicInit(4.5); // Интервал в секундах
+sliderModule.sliderLogicInit(4); // Интервал в секундах
