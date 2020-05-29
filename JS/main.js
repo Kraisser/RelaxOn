@@ -4,4 +4,12 @@ document.getElementById(`hamburgerIconContainer`).addEventListener(`click`, func
 	document.getElementById(`hamburgerNavUl`).classList.toggle(`hideMenu`);
 });
 
-sliderModule.sliderLogicInit(4); // Интервал в секундах
+window.addEventListener(`scroll`, function() {
+	if (pageYOffset >= 60) {
+		document.getElementById(`stocks`).style.display = `none`;
+	} else {
+		document.getElementById(`stocks`).style.display = `flex`;
+	}
+});
+
+sliderModule.sliderLogicInit(2); // Интервал в секундах

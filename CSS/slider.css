@@ -4,7 +4,7 @@
 	list-style-type: none;
 	position: relative;
 	overflow: hidden;
-	height: 50vh;
+	height: 600px;
 }
 .slideDivan {
 	position: absolute;
@@ -52,11 +52,31 @@
 	height: 20px;
 	border-radius: 50%;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 .slideDot:hover {
 	background-color: lightgrey;
 }
 .activeSlideDot {
 	background-color: grey;
+}
+
+
+
+@media only all and (max-width: 550px) {
+	.slideDot {
+		width: 15px;
+		height: 15px;
+	}
+}
+@media only all and (max-width: 460px) {
+	.slideDot {
+		margin: 0 3px;
+	}
+}
+@media only all and (max-width: 380px) {
+	.slideDot {
+		width: 11px;
+		height: 11px;
+	}
 }

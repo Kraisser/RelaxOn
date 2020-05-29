@@ -28,13 +28,15 @@
 			}
 			dotsCollection = document.querySelectorAll(`.slideDot`);
 			dotsContainer.style.left = `50%`;
-			dotsContainer.style.marginLeft = `-${dotsContainer.offsetWidth / 2}px`;
+			this.adaptiveSizing();
+			
 		}
 
 		this.addEvents = function() {			
 			document.getElementById(`sliderDivanContainer`).addEventListener(`click`, that.stopInterval);
 			controlNext.addEventListener(`click`, () => this.moveSlide(true));
 			controlPrev.addEventListener(`click`, () => this.moveSlide(false));
+			window.addEventListener(`resize`, that.adaptiveSizing);
 			dotsContainer.addEventListener(`click`, (e) => this.goSlide(e));
 		}
 
@@ -59,9 +61,15 @@
 			slidesCollection[curSlide].classList.toggle(`showSlide`);
 		}
 
+		this.adaptiveSizing = function() {
+			sliderUl.style.height = `${sliderUl.offsetWidth / 2}px`;
+			dotsContainer.style.marginLeft = `-${dotsContainer.offsetWidth / 2}px`;
+		}
+
 		this.init = function(interval) {
 			slidesCollection = document.querySelectorAll(`.slideDivan`)
 			intervalSec = interval * 1000;
+			sliderUl = document.getElementById(`slidesUl`);
 			controlNext = document.getElementById(`prevControl`);
 			controlPrev = document.getElementById(`nextControl`);
 			dotsContainer = document.getElementById(`dotsContainer`);
