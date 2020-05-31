@@ -16,6 +16,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	transition: 0.05s;
 }
 .stocksText {
 	margin: 0;
@@ -148,6 +150,7 @@ nav {
 	background-color: white;
 	display: flex;
 	flex-direction: column;
+	transition-property: height;
 	transition: 0.25s linear;
 	height: 260px;
 }
@@ -209,8 +212,7 @@ nav {
 .hamburgerNavUl {
 	list-style: none;
 	margin: 0;
-	padding: 0 30px;	
-	transition: 0.25s linear;
+	padding: 0 30px;
 	overflow: hidden;
 }
 .hamburgerNavUl li {
