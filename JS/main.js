@@ -21,7 +21,6 @@ function stocksHide() {
 		document.getElementById(`stocks`).style.height = `60px`;
 		hamburgerTopAdopt(160);
 	}
-	console.log(123);
 }
 
 function hamburgerTopAdopt(headerHeight) {
