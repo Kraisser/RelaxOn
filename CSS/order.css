@@ -1,0 +1,41 @@
+.orderContainer {
+	/*display: flex;*/
+}
+.orderFormContainer {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color: MediumPurple;
+	padding: 10px;
+	border-radius: 4px;
+}
+.modelLabel {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.doubleContactBlock {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.inp {
+	margin: 5px 0 10px;
+	padding-left: 5px;
+	border-radius: 4px;
+}
+.lbl {
+	font-weight: 600;
+}
+.formBut {
+	margin-top: 10px;
+	width: 150px;
+}
+.inpArea {
+	height: 100px;
+	margin-top: 5px;
+	border-radius: 4px;
+	resize: none;
+}
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+}

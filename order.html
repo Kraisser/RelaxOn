@@ -92,42 +92,44 @@
 			</div>
 		</section>
 
-		<section style="background-color: lightgrey;">
-			<div class="insideContainer">
+		<section style="background-color: lightgrey; flex-grow: 1;">
+			<div class="insideContainer orderContainer">
 				<h2 class="heading">Выберите модель и мы свяжемся с вами</h2>
-				<form>
-					<div>
-						<h4>Выберите модель</h4>
+				<div class="orderFormContainer">
+					<form>
 						<div>
-							<input type="radio" name="orderBackModelMini" class="" id="orderBackModelMini">
-							<label for="orderBackModelMini" class="">RelaxON-MINI</label>
+							<div class="modelLabel">Модель:</div>
+							<div>
+								<input type="radio" name="orderBackModelMini" class="inp radioInput" id="orderBackModelMini">
+								<label for="orderBackModelMini" class="radioLabel lbl">RelaxON-MINI</label>
+							</div>
+							<div>
+								<input type="radio" name="orderBackModelOptimum" class="inp radioInput" id="orderBackModelOptimum">
+								<label for="orderBackModelOptimum" class="radioLabel lbl">RelaxON-OPTIMUM</label>
+							</div>	
+							<div>
+								<input type="radio" name="orderBackModelEXCLUSIVE" class="inp radioInput" id="orderBackModelEXCLUSIVE">
+								<label for="orderBackModelEXCLUSIVE" class="radioLabel lbl">RelaxON-EXCLUSIVE</label>
+							</div>
+							
 						</div>
-						<div>
-							<input type="radio" name="orderBackModelOptimum" class="" id="orderBackModelOptimum">
-							<label for="orderBackModelOptimum" class="">RelaxON-OPTIMUM</label>
-						</div>	
-						<div>
-							<input type="radio" name="orderBackModelEXCLUSIVE" class="" id="orderBackModelEXCLUSIVE">
-							<label for="orderBackModelEXCLUSIVE" class="">RelaxON-EXCLUSIVE</label>
+						<div class="doubleContactBlock">
+							<label for="orderBackName" class="lbl">Ваше имя:</label>
+							<input type="text" name="orderBackName" placeholder="Введите ваше имя" class="inp" id="orderBackName">
 						</div>
-						
-					</div>
-					<div>
-						<label for="orderBackName" class="">Ваше имя:</label>
-						<input type="text" name="orderBackName" placeholder="Введите ваше имя" class="" id="orderBackName">
-					</div>
-					<div>
-						<label for="orderBackPhone" class="">Ваш телефон:</label>
-						<input type="text" name="orderBackPhone" placeholder="Введите ваш номер телефона" class="" id="orderBackPhone">
-					</div>
-					<div>
-						<label for="orderBackComment" class="">Комментарий <span class="helpText">(необязательно)</span>:</label>
-						<textarea name="orderBackComment" placeholder="Введите ваш комментарий" class="" id="orderBackComment"></textarea>
-					</div>
-					
-					<button id="orderBackBut" class="" disabled>Отправить</button>
-				</form>
-				
+						<div class="doubleContactBlock">
+							<label for="orderBackPhone" class="lbl">Ваш телефон:</label>
+							<input type="text" name="orderBackPhone" placeholder="Введите ваш номер телефона" class="inp" id="orderBackPhone">
+						</div>
+						<div class="doubleContactBlock">
+							<label for="orderBackComment" class="lbl">Комментарий<span class="helpText">(необязательно)</span>:</label>
+							<textarea name="orderBackComment" placeholder="Введите ваш комментарий" class="inpArea" id="orderBackComment"></textarea>
+						</div>
+						<div class="buttonContainer">
+							<button id="orderBackBut" class="formBut" disabled>Отправить</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</section>
 

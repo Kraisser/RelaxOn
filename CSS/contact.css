@@ -1,3 +1,6 @@
+.contactInfoContainer {
+	flex-grow: 1;
+}
 .contactInfo {
 	display: flex;
 }
