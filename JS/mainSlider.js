@@ -86,3 +86,5 @@
 		}	
 	}
 }());
+
+sliderModule.sliderLogicInit(2); // Интервал в секундах

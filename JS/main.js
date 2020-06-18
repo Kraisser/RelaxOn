@@ -42,4 +42,3 @@ function hamburgerTopAdopt(hamburgerTop) {
 	document.getElementById(`hamburgerNavMenu`).style.top = `${hamburgerTop}px`;
 }
 
-sliderModule.sliderLogicInit(2); // Интервал в секундах
