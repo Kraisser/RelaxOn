@@ -83,6 +83,6 @@
 		sliderLogicInit: function(interval) {
 			const slider = new sliderModuleFun();
 			slider.init(interval);
-		}
+		}	
 	}
 }());
