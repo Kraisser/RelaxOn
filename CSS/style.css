@@ -3,7 +3,7 @@
 	background-color: rgb(247, 244, 180);
 }
 #sliderDivanContainer {
-	background-color: black;
+	background-color: grey;
 	position: relative;
 }
 #workPositionContainer {
@@ -12,7 +12,7 @@
 #workPosition {
 	background-color: rgb(200, 200, 180);
 	display: flex;	
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .workPositionWrapper {
 	flex-grow: 3;
@@ -58,9 +58,9 @@
 
 
 @media only all and (max-width: 1250px) {
-	#sliderDivanContainer {
+	/*#sliderDivanContainer {
 		margin: 0 5px;
-	}
+	}*/
 
 	.flexRow img:nth-child(1) {
 		width: 40%;
