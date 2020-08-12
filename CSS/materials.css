@@ -29,6 +29,17 @@
 }
 
 
+.modalWindow {
+	background-color: lightgrey;
+	z-index: 50;
+	position: absolute;
+	top: 20%;
+	height: 200px;
+	left: 30%;
+	right: 30%;
+}
+
+
 @media only all and (max-width: 1050px) {
 	.dspMaterials {
 		flex-direction: column;

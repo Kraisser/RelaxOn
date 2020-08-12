@@ -67,3 +67,11 @@
 		height: 75px;
 	}
 }
+@media only all and (max-width: 350px) {
+	.lbl {
+		font-size: 18px;
+	}
+	.inp {
+		font-size: 18px;
+	}
+}

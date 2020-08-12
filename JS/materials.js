@@ -8,9 +8,17 @@
 
 		}
 
+		this.resizeModalWindow = function() {
+			
+		}
+
 		this.init = function() {
-			dspContainers = document.querrySelectorAll(`.dspPages`);
-			dspContainers.addEventListener(`click`, matModal.openModal());
+			dspContainers = document.querySelectorAll(`.dspPages`);
+			console.log(dspContainers[0]);
+			for (let i = 0; i < dspContainers.length; i++) {
+				console.log(i);
+				dspContainers[i].addEventListener(`click`, () => this.openModal());
+			}
 		}
 	}
 
@@ -21,3 +29,5 @@
 		}
 	}
 }());
+
+materialsModalModule.modalLogicInit();
